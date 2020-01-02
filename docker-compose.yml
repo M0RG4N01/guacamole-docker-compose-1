@@ -15,7 +15,7 @@ services:
       - dbdata:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: $POSTGRES_USER
-      POSTGRES_PASSWORD: 
+      POSTGRES_PASSWORD: $POSTGRES_PASS
     depends_on:
       - init-guacamole-db
 
